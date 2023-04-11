@@ -46,7 +46,7 @@ const initApp = async () => {
     }, 100)
   )
 
-  event(select('.dice'), 'click', async (e) => {
+  event(select('.dice'), 'pointerup', async (e) => {
     e.preventDefault()
     advice = await generateAdvice()
     adviceText.textContent = `"${advice.advice}"`

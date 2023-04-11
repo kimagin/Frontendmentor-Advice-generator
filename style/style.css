@@ -52,5 +52,5 @@ main {
 }
 
 .dice {
-  @apply mx-auto bg-neon-gray w-16 h-16 rounded-full flex justify-center items-center transition-all hover:shadow-lg hover:shadow-neon-gray/60 hover:cursor-pointer;
+  @apply mx-auto bg-neon-gray w-16 h-16 rounded-full flex justify-center items-center transition-all hover:shadow-lg hover:shadow-neon-gray/60 hover:cursor-pointer touch-auto;
 }
