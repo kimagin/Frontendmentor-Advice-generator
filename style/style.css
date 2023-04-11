@@ -22,7 +22,8 @@ body {
   @apply bg-dark-blue font-sans;
 }
 
-h1 {
+h1,
+q {
   @apply text-light-cyan leading-10  text-[28px] font-bold;
 }
 

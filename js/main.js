@@ -19,7 +19,7 @@ const initApp = async () => {
   const dividerMobile = '../images/pattern-divider-mobile.svg'
 
   //Selectors
-  const adviceText = select('.advice')
+  const adviceText = select('.quote')
   const adviceNumber = select('.advice-id')
 
   //Load events
@@ -31,7 +31,7 @@ const initApp = async () => {
 
   let advice = await generateAdvice()
 
-  adviceText.textContent = `"${advice.advice}"`
+  adviceText.textContent = `${advice.advice}`
   adviceNumber.textContent = advice.id
 
   event(
@@ -49,7 +49,7 @@ const initApp = async () => {
   event(select('.dice'), 'pointerup', async (e) => {
     e.preventDefault()
     advice = await generateAdvice()
-    adviceText.textContent = `"${advice.advice}"`
+    adviceText.textContent = `${advice.advice}`
     adviceNumber.textContent = advice.id
   })
 
