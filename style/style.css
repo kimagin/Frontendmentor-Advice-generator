@@ -1,0 +1,56 @@
+/* Tailwind Directives : */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Styles */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-dark-blue font-sans;
+}
+
+h1 {
+  @apply text-light-cyan leading-10  text-[28px] font-bold;
+}
+
+main {
+  @apply h-[100svh] flex flex-col justify-center px-6;
+}
+
+.app-container {
+  @apply relative bg-dark-grayish-blue md:max-w-[550px] mx-auto px-6 md:px-10  py-10 text-center
+  rounded-2xl;
+}
+
+.advice-number {
+  @apply text-neon-gray  font-bold uppercase tracking-[.3rem];
+}
+
+.advice {
+  @apply my-5 md:my-7;
+}
+
+.seperator {
+  @apply mb-7 md:my-10 flex justify-center;
+}
+
+.dice-wrapper {
+  @apply absolute w-full  left-0 -bottom-[2rem];
+}
+
+.dice {
+  @apply mx-auto bg-neon-gray w-16 h-16 rounded-full flex justify-center items-center transition-all hover:shadow-lg hover:shadow-neon-gray/60 hover:cursor-pointer;
+}
